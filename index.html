@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    //Create variables for rock, paper, or, scissors.
+    //Get a random number between 1-3.
+    const rndInt = Math.floor(Math.random() * 3) + 1
+    console.log(rndInt)
+    let rock;
+    let paper;
+    let scissors;
+    //The game gets either rock, paper, or, scissors from the computer at random.
+    //The value is returned and stored in a variable.
+    function getComputerChoice() {
+        if (rndInt === 1) {
+            rock = 'Rock';
+        }
+        else if (rndInt === 2) {
+            paper = 'Paper';
+        }
+        else if (rndInt === 3) {
+            scissors = 'Scissors';
+        }
+    }
+
+    getComputerChoice();
+
+    console.log(rock, paper, scissors);
+    //The user inputs either rock, paper, or, scissors.
+    //The value is stored in a variable.
+    //The input cannot be case sensitive.
+
+    
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
