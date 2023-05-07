@@ -9,32 +9,37 @@
     //Create variables for rock, paper, or, scissors.
     //Get a random number between 1-3.
     //const rndInt = Math.floor(Math.random() * 3) + 1
-    let rock;
-    let paper;
-    let scissors;
+    let enemy;
+    let result;
     //The game gets either rock, paper, or, scissors from the computer at random.
     //The value is returned and stored in a variable.
     function getComputerChoice() {
         let rndInt = Math.floor(Math.random() * 3) + 1
         if (rndInt === 1) {
-            rock = 'Rock';
+            enemy = 1;
+            return result = "rock";
         }
         else if (rndInt === 2) {
-            paper = 'Paper';
+            enemy = 2;
+            return result = "paper";
         }
         else if (rndInt === 3) {
-            scissors = 'Scissors';
+            enemy = 3;
+            return result = "scissors";
         }
     }
 
-    getComputerChoice();
+    function playOneRound() {
+        result = getComputerChoice();
+        player = prompt("Rock, paper, or, scissors?").toLowerCase();
 
-    console.log(rock, paper, scissors);
+    }
+
 
     //Write a function that plays one round of the game,
     //it should have two parameters, the playerSelection and computerSelection
     // - and then return a string that declares the winner of the round like so: "You Lose! Paper beats Rock"
-    
+
     //The user inputs either rock, paper, or, scissors.
     //The value is stored in a variable.
     //The input cannot be case sensitive.
